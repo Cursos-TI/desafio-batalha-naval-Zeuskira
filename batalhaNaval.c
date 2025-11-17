@@ -16,6 +16,11 @@ int main() {
     int navio2_linha[] = {2, 3, 4}; // Define as posições do navio vertical
     int navio2_coluna[] = {7, 7, 7};
 
+    int navio3_linha[] = {4, 5, 6}; // Define as posições do navio diagonal
+    int navio3_coluna[] = {1, 2, 3};
+
+    int navio4_linha[] = {7, 8, 9}; // Define as posições do navio diagonal
+    int navio4_coluna[] = {7, 8, 9};
     
     for (i = 0; i < 3; i++) { // Coloca os navios no tabuleiro, substituindo os zeros por 3
         tabuleiro[navio1_linha[i]][navio1_coluna[i]] = 3;
@@ -25,6 +30,12 @@ int main() {
         tabuleiro[navio2_linha[i]][navio2_coluna[i]] = 3;
     }
 
+    for (i = 0; i < 3; i++) {
+        tabuleiro[navio3_linha[i]][navio3_coluna[i]] = 3;
+    }
+    for (i = 0; i < 3; i++) {
+        tabuleiro[navio4_linha[i]][navio4_coluna[i]] = 3;
+    }
 
     for (i = 0; i < 10; i++) { 
         printf("%c: ", 'A' + i); // Imprime a letra correspondente à linha (A–J), convertendo o índice numérico em caractere ASCII
