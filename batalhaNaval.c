@@ -8,7 +8,7 @@ int main() {
     for (j = 0; j < 10; j++) { // Loop para imprimir os números das colunas
         printf("%d ", 1 + j); // Imprime os números de 1 a 10, sem o 1 + j, iria imprimir de 0 a 9
     }
-    printf("\n");
+    printf("\n"); 
 
     int navio1_linha[] = {2, 2, 2}; // Define as posições do navio horizontal
     int navio1_coluna[] = {2, 3, 4};
@@ -35,6 +35,27 @@ int main() {
     }
     for (i = 0; i < 3; i++) {
         tabuleiro[navio4_linha[i]][navio4_coluna[i]] = 3;
+    }
+    // Habilidades
+    int cone_linha[]= {4,5,5,5,6,6,6,6,6}; // Define as posições dos cones
+    int cone_coluna[]= {3,2,3,4,1,2,3,4,5};
+
+    for (i = 0; i < 9; i++) { // Coloca o cone no tabuleiro
+        tabuleiro[cone_linha[i]][cone_coluna[i]] = 5;
+    }
+    
+    int cruz_linha[]= {1,0,2,1,1,1,1}; // Define as posições da cruz
+    int cruz_coluna[]= {2,2,2,1,0,3,4};
+
+    for (i = 0; i < 7; i++) { // Coloca a cruz no tabuleiro
+        tabuleiro[cruz_linha[i]][cruz_coluna[i]] = 5;
+    }
+
+    int octa_linha[]= {1,1,1,0,2}; // Define as posições do octaedro
+    int octa_coluna[]= {7,8,9,8,8};
+
+    for (i = 0; i < 5; i++) { // Coloca o octaedro no tabuleiro
+        tabuleiro[octa_linha[i]][octa_coluna[i]] = 5;
     }
 
     for (i = 0; i < 10; i++) { 
